@@ -8,3 +8,14 @@
   border: 1px solid black;
   height: 90%;
 }
+
+.chat-row {
+  width: 100%;
+  height: 100%;
+}
+
+div.dialog-list-block {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
