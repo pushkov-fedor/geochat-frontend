@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Dialog.css";
 
 export class Dialog extends Component {
   constructor(props) {
@@ -7,11 +8,13 @@ export class Dialog extends Component {
 
   render() {
     return (
-      <div className="">
-        <h1>{this.props.title}</h1>
-        <div className="last-message">
-          <h2>{this.props.author}</h2>
-          <p>{this.props.message}</p>
+      <div className="d-flex flex-column justify-content-start dialog-container">
+        <div className="title-pane d-flex flex-column justify-content-center">
+          <h1 className="title">{this.props.title}</h1>
+        </div>
+        <div className="message-pane">
+          <span className="author-dark">{this.props.author}:</span>{" "}
+          {this.props.message}
         </div>
       </div>
     );

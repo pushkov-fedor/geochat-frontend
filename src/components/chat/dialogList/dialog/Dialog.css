@@ -1,0 +1,24 @@
+.dialog-container {
+  height: 15vh;
+}
+
+.title-pane {
+  height: 40%;
+  background-color: #8c39ef;
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+.message-pane {
+  height: 60%;
+}
+
+.author-dark {
+  color: rgba(0, 0, 0, 0.95);
+  font-weight: 600;
+}

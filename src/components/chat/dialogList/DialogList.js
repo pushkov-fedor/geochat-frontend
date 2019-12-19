@@ -6,6 +6,9 @@ export class DialogList extends Component {
   render() {
     return (
       <div className="dialog-list-container">
+        <Dialog title="Трэпхата" author="Fedya" message="eto ya" />
+        <Dialog title="Privet" author="Fedya" message="eto ya" />
+        <Dialog title="Privet" author="Fedya" message="eto ya" />
         <Dialog title="Privet" author="Fedya" message="eto ya" />
       </div>
     );
