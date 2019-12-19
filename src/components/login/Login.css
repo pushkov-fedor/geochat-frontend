@@ -13,6 +13,14 @@
   border: none;
   height: 8vh;
   box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.6);
+  transition: width 0.5s, height 0.5s;
+}
+
+.form-control:focus {
+  background-color: #563d7c;
+  height: 9vh;
+  width: 27vw;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .form-control::placeholder {
