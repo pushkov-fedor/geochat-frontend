@@ -1,0 +1,10 @@
+.chat-background {
+  background-color: #957bbe;
+  height: 100vh;
+  width: 100vw;
+}
+
+.chat-container {
+  border: 1px solid black;
+  height: 90%;
+}
