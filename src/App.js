@@ -1,7 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
+import { Login } from "./components/login/Login";
 
-function App() {
-  return <div className="App">PRIVET!!!</div>;
+export default class App extends Component {
+  render() {
+    return (
+      <div>
+        <Login />
+      </div>
+    );
+  }
 }
-
-export default App;
