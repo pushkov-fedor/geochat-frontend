@@ -7,11 +7,13 @@ export class Login extends Component {
 
     this.state = {
       login: "",
-      password: ""
+      password: "",
+      submit: false
     };
 
     this.handleLoginChange = this.handleLoginChange.bind(this);
     this.handlePasswordChange = this.handlePasswordChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
   }
 
   handleLoginChange(e) {
@@ -22,10 +24,16 @@ export class Login extends Component {
     this.setState({ password: e.target.value });
   }
 
+  onSubmit(e) {
+    this.setState({ submit: true });
+  }
+
   render() {
-    console.log(this.state);
     return (
-      <div className="container-fluid d-flex flex-column justify-content-center align-items-center login-container">
+      <div
+        className="container-fluid d-flex flex-column justify-content-center align-items-center login-container"
+        style={{ marginLeft: this.state.submit ? "100vw" : "0" }}
+      >
         <form className="d-flex flex-column justify-content-center align-items-center">
           <div className="form-group d-flex flex-column justify-content-center align-items-center">
             <input
@@ -45,7 +53,11 @@ export class Login extends Component {
               placeholder="Enter password"
             />
           </div>
-          <button type="button" class="btn btn-login">
+          <button
+            type="button"
+            className="btn btn-login"
+            onClick={this.onSubmit}
+          >
             Login
           </button>
         </form>
