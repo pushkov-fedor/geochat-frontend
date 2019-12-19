@@ -28,7 +28,19 @@ export class Login extends Component {
   onSubmit(e) {
     e.preventDefault();
     if (this.state.login !== "" && this.state.password !== "") {
-      this.setState({ submit: true });
+      var url = "http://192.168.0.110/api/login";
+      var body = { username: this.state.login, pass: this.state.password };
+
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", url, true);
+      xhr.setRequestHeader("Content-type", "application/json");
+      xhr.onreadystatechange = () => {
+        if (xhr.readyState === 4) {
+          console.log(xhr.responseText);
+        }
+      };
+      xhr.send(JSON.stringify(body));
+      // this.setState({ submit: true });
     } else {
       this.setState({ showAlert: true });
       setTimeout(() => this.setState({ showAlert: false }), 3000);
