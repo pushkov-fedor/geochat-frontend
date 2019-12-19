@@ -34,13 +34,14 @@ export class Login extends Component {
       var xhr = new XMLHttpRequest();
       xhr.open("POST", url, true);
       xhr.setRequestHeader("Content-type", "application/json");
-      var self = (this.xhr.onreadystatechange = () => {
+      var self = this;
+      xhr.onreadystatechange = () => {
         if (xhr.readyState === 4 && xhr.status === 200) {
           var uuid = JSON.parse(xhr.responseText);
           self.setState({ submit: true });
-          console.log(response);
+          self.props.login(uuid);
         }
-      });
+      };
       xhr.send(JSON.stringify(body));
     } else {
       this.setState({ showAlert: true });

@@ -3,12 +3,22 @@ import { Login } from "./components/login/Login";
 import { Chat } from "./components/chat/Chat";
 
 export default class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      uuid: ""
+    };
+
+    this.login = this.login.bind(this);
+  }
+
+  login(uuid) {
+    this.setState({ uuid });
+  }
   render() {
-    return (
-      <div>
-        <Login />
-        {/* <Chat /> */}
-      </div>
-    );
+    var content =
+      this.state.uuid === "" ? <Login login={this.login} /> : <Chat />;
+    return <div>{content}</div>;
   }
 }
