@@ -8,7 +8,8 @@ export class Login extends Component {
     this.state = {
       login: "",
       password: "",
-      submit: false
+      submit: false,
+      showAlert: false
     };
 
     this.handleLoginChange = this.handleLoginChange.bind(this);
@@ -25,7 +26,12 @@ export class Login extends Component {
   }
 
   onSubmit(e) {
-    this.setState({ submit: true });
+    if (this.state.login !== "" && this.state.password !== "") {
+      this.setState({ submit: true });
+    } else {
+      this.setState({ showAlert: true });
+      setTimeout(() => this.setState({ showAlert: false }), 3000);
+    }
   }
 
   render() {
@@ -34,6 +40,17 @@ export class Login extends Component {
         className="container-fluid d-flex flex-column justify-content-center align-items-center login-container"
         style={{ marginLeft: this.state.submit ? "100vw" : "0" }}
       >
+        <div
+          class="alert alert-danger"
+          role="alert"
+          style={{
+            position: "absolute",
+            top: "20%",
+            opacity: this.state.showAlert ? "100%" : "0"
+          }}
+        >
+          Please, fill in login and password fields.
+        </div>
         <form className="d-flex flex-column justify-content-center align-items-center">
           <div className="form-group d-flex flex-column justify-content-center align-items-center">
             <input
