@@ -26,6 +26,7 @@ export class Login extends Component {
   }
 
   onSubmit(e) {
+    e.preventDefault();
     if (this.state.login !== "" && this.state.password !== "") {
       this.setState({ submit: true });
     } else {
@@ -51,7 +52,10 @@ export class Login extends Component {
         >
           Please, fill in login and password fields.
         </div>
-        <form className="d-flex flex-column justify-content-center align-items-center">
+        <form
+          className="d-flex flex-column justify-content-center align-items-center"
+          onSubmit={this.onSubmit}
+        >
           <div className="form-group d-flex flex-column justify-content-center align-items-center">
             <input
               type="text"
@@ -70,11 +74,7 @@ export class Login extends Component {
               placeholder="Enter password"
             />
           </div>
-          <button
-            type="button"
-            className="btn btn-login"
-            onClick={this.onSubmit}
-          >
+          <button type="submit" className="btn btn-login">
             Login
           </button>
         </form>
