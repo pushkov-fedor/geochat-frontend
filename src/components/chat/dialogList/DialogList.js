@@ -14,6 +14,9 @@ export class DialogList extends Component {
         <Dialog title="Privet" author="Fedya" message="eto ya" />
         <Dialog title="Privet" author="Fedya" message="eto ya" />
         <Dialog title="Privet" author="Fedya" message="eto ya" />
+        <Dialog title="Privet" author="Fedya" message="eto ya" />
+        <Dialog title="Privet" author="Fedya" message="eto ya" />
+        <Dialog title="Privet" author="Fedya" message="eto ya" />
       </div>
     );
   }

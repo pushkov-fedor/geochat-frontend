@@ -3,4 +3,9 @@
   width: 100%;
   background-color: #f9fbfc;
   overflow: auto;
+  padding: 30px 5px;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

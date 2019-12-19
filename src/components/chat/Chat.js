@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { DialogList } from "./dialogList/DialogList";
+import { MessagesList } from "./messagesList/MessagesList";
 import "./Chat.css";
 
 export class Chat extends Component {
@@ -11,7 +12,9 @@ export class Chat extends Component {
             <div className="col-4 dialog-list-block">
               <DialogList />
             </div>
-            <div className="col-8">BBBB</div>
+            <div className="col-8">
+              <MessagesList />
+            </div>
           </div>
         </div>
       </div>
