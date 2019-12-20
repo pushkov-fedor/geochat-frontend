@@ -11,7 +11,7 @@ export class Dialog extends Component {
       <div className="dialog-container d-flex align-items-center justify-content-center">
         <div className="dialog-card">
           <div className="group-title-pane d-flex align-items-center">
-            <h1 className="group-title">{this.props.title}</h1>
+            <p className="group-title">{this.props.title}</p>
           </div>
           <div className="last-message-pane d-flex align-items-center">
             <p className="last-message">

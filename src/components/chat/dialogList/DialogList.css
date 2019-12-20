@@ -4,6 +4,7 @@
   background-color: #f8fafb;
   overflow: auto;
   padding: 30px 5px;
+  border-radius: 15px 0 0 15px;
 }
 
 ::-webkit-scrollbar {
