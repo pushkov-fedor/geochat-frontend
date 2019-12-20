@@ -1,0 +1,7 @@
+.messages-list-background {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0 15px 15px 0;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
