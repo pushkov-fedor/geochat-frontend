@@ -20,6 +20,24 @@ export class CreateChatPopup extends Component {
   submitCreateChat(e) {
     e.preventDefault();
     if (this.state.chatTitle != "") {
+      var url = `http://192.168.0.110/api/chat/${this.props.uuid}`;
+      var body = {
+        title: this.state.chatTitle,
+        description: "",
+        geoId: "12345",
+        description: "100"
+      };
+
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", url, true);
+      xhr.setRequestHeader("Content-type", "application/json");
+      var self = this;
+      xhr.onreadystatechange = () => {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          console.log(xhr.responseText);
+        }
+      };
+      xhr.send(JSON.stringify(body));
     }
   }
 

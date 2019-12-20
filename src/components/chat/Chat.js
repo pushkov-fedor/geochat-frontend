@@ -22,7 +22,7 @@ export class Chat extends Component {
             </div>
           </div>
           <CreateChatButton />
-          <CreateChatPopup />
+          <CreateChatPopup uuid={this.props.uuid} />
         </div>
       </div>
     );
