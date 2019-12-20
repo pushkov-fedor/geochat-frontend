@@ -7,7 +7,7 @@ export default class App extends Component {
     super();
 
     this.state = {
-      uuid: "e1373384-d416-4270-8639-81e22a5c5c49"
+      uuid: "ab92b1f3-4862-49c8-8292-167dc879f6e7"
     };
 
     this.login = this.login.bind(this);
