@@ -7,7 +7,7 @@ export default class App extends Component {
     super();
 
     this.state = {
-      uuid: "ab92b1f3-4862-49c8-8292-167dc879f6e7"
+      uuid: ""
     };
 
     this.login = this.login.bind(this);
@@ -17,11 +17,12 @@ export default class App extends Component {
     this.setState({ uuid });
   }
   render() {
-    return (
-      <div>
+    var content =
+      this.state.uuid === "" ? (
         <Login login={this.login} />
+      ) : (
         <Chat uuid={this.state.uuid} />
-      </div>
-    );
+      );
+    return <div>{content}</div>;
   }
 }
