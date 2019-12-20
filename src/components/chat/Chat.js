@@ -33,7 +33,7 @@ export class Chat extends Component {
               <DialogList
                 uuid={this.props.uuid}
                 reloadDialogList={this.state.reloadDialogList}
-                toggleReloadDialogList={this.state.toggleReloadDialogList}
+                toggleReloadDialogList={this.toggleReloadDialogList}
               />
             </div>
             <div className="col-8 messages-list-block">
@@ -42,12 +42,12 @@ export class Chat extends Component {
           </div>
           <CreateChatButton
             toggleCreateChatPopup={this.toggleCreateChatPopup}
-            toggleReloadDialogList={this.toggleReloadDialogList}
           />
           <CreateChatPopup
             uuid={this.props.uuid}
             showCreateChatPopup={this.state.showCreateChatPopup}
             toggleCreateChatPopup={this.toggleCreateChatPopup}
+            toggleReloadDialogList={this.toggleReloadDialogList}
           />
         </div>
       </div>

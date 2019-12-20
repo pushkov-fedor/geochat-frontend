@@ -38,11 +38,11 @@ export class CreateChatPopup extends Component {
       };
       xhr.send(JSON.stringify(body));
       self.props.toggleCreateChatPopup();
+      self.props.toggleReloadDialogList();
     }
   }
 
   render() {
-    console.log(this.state.chatTitle);
     return (
       <div
         className="create-chat-popup d-flex flex-column justify-content-center align-items-center"

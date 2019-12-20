@@ -31,6 +31,7 @@ export class DialogList extends Component {
 
     xhr.onreadystatechange = () => {
       if (xhr.readyState === 4 && xhr.status === 200) {
+        console.log(xhr.responseText);
         const dialogs = JSON.parse(xhr.responseText);
         self.setState({ dialogs });
       }

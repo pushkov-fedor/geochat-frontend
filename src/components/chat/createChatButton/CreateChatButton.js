@@ -12,7 +12,6 @@ export class CreateChatButton extends Component {
         className="create-chat-button d-flex justify-content-center align-items-center"
         onClick={() => {
           this.props.toggleCreateChatPopup();
-          this.props.toggleReloadDialogList();
         }}
       >
         <i class="fas fa-plus create-chat-button-plus-icon"></i>
