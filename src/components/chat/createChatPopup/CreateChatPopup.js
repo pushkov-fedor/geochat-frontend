@@ -19,6 +19,8 @@ export class CreateChatPopup extends Component {
 
   submitCreateChat(e) {
     e.preventDefault();
+    if (this.state.chatTitle != "") {
+    }
   }
 
   render() {
