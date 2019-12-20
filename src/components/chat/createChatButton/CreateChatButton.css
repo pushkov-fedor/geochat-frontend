@@ -11,7 +11,7 @@
     rgba(160, 57, 244, 1) 100%
   );
   border-radius: 50%;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
   font-size: 1.8vw;
   transition: all 0.4s;
 }

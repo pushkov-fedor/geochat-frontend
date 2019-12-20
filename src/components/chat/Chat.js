@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { DialogList } from "./dialogList/DialogList";
 import { MessagesList } from "./messagesList/MessagesList";
 import { CreateChatButton } from "./createChatButton/CreateChatButton";
+import { CreateChatPopup } from "./createChatPopup/CreateChatPopup";
 import "./Chat.css";
 
 export class Chat extends Component {
@@ -21,6 +22,7 @@ export class Chat extends Component {
             </div>
           </div>
           <CreateChatButton />
+          <CreateChatPopup />
         </div>
       </div>
     );

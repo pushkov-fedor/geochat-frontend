@@ -1,0 +1,13 @@
+.create-chat-popup {
+  width: 70vh;
+  height: 80vh;
+  background-color: #123;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 500;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
+}
