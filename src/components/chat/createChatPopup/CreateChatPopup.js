@@ -24,7 +24,7 @@ export class CreateChatPopup extends Component {
       var body = {
         title: this.state.chatTitle,
         description: "",
-        geoId: "12345",
+        geoId: "1234",
         description: "100"
       };
 
