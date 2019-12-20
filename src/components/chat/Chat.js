@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { DialogList } from "./dialogList/DialogList";
 import { MessagesList } from "./messagesList/MessagesList";
+import { CreateChatButton } from "./createChatButton/CreateChatButton";
 import "./Chat.css";
 
 export class Chat extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
   }
   render() {
@@ -13,12 +14,13 @@ export class Chat extends Component {
         <div className="container chat-container">
           <div className="row chat-row">
             <div className="col-4 dialog-list-block">
-              <DialogList uuid={this.props.uuid}/>
+              <DialogList uuid={this.props.uuid} />
             </div>
             <div className="col-8 messages-list-block">
               <MessagesList />
             </div>
           </div>
+          <CreateChatButton />
         </div>
       </div>
     );

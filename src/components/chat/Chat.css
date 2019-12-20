@@ -5,6 +5,7 @@
 }
 
 .chat-container {
+  position: relative;
   height: 90%;
 }
 
