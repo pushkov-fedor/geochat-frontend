@@ -17,8 +17,11 @@ export default class App extends Component {
     this.setState({ uuid });
   }
   render() {
-    var content =
-      this.state.uuid === "" ? <Login login={this.login} /> : <Chat />;
-    return <div>{content}</div>;
+    return (
+      <div>
+        <Login login={this.login} />
+        <Chat />
+      </div>
+    );
   }
 }

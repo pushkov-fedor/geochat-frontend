@@ -53,7 +53,12 @@ export class Login extends Component {
     return (
       <div
         className="container-fluid d-flex flex-column justify-content-center align-items-center login-container"
-        style={{ marginLeft: this.state.submit ? "100vw" : "0" }}
+        style={{
+          marginLeft: this.state.submit ? "100vw" : "0",
+          position: "absolute",
+          top: "0",
+          left: "0"
+        }}
       >
         <div
           class="alert alert-danger"

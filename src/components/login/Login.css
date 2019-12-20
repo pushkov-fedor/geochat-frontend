@@ -3,6 +3,7 @@
   height: 100vh;
   width: 100vw;
   transition: all 1s;
+  z-index: 200;
 }
 
 .form-group {
