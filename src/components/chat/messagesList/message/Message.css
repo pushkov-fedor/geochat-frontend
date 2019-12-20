@@ -1,5 +1,21 @@
 .message-wrapper {
   width: 100%;
+  height: auto;
   min-height: 100px;
-  border: 1px solid black;
+}
+
+.message-card {
+  width: 70%;
+  min-height: 80%;
+  height: auto;
+  margin: 1.5vh 0;
+  margin-left: 15px;
+  background-color: #e7eff7;
+  border-radius: 25px;
+}
+
+.message {
+  height: 90%;
+  width: 90%;
+  margin: 5% 5%;
 }

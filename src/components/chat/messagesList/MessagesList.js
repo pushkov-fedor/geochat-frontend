@@ -7,7 +7,10 @@ export class MessagesList extends Component {
   render() {
     return (
       <div className="messages-list-background">
-        <div className="messages-list-inner-block">
+        <div className="messages-list-inner-block flex-column justify-content-end">
+          <Message />
+          <Message />
+          <Message />
           <Message />
         </div>
         <div className="user-input-block">
