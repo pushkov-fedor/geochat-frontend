@@ -12,7 +12,7 @@ export class Chat extends Component {
             <div className="col-4 dialog-list-block">
               <DialogList />
             </div>
-            <div className="col-8">
+            <div className="col-8 messages-list-block">
               <MessagesList />
             </div>
           </div>
