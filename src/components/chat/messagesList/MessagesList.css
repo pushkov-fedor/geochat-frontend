@@ -5,3 +5,34 @@
   border-radius: 0 15px 15px 0;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
 }
+
+.messages-list-inner-block {
+  height: 85%;
+}
+
+.user-input-block {
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+  height: 15%;
+}
+
+.user-input-message-form {
+  height: 100%;
+  width: 100%;
+}
+
+.user-input-message-wrapper {
+  width: 80%;
+  height: 100%;
+}
+
+.user-input-message {
+  width: 90%;
+  height: 80%;
+  border: none;
+  background-color: #f8fafb;
+}
+
+.user-input-send-button-wrapper {
+  width: 20%;
+  height: 100%;
+}
