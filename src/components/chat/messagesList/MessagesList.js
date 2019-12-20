@@ -12,11 +12,13 @@ export class MessagesList extends Component {
               <input
                 type="text"
                 className="user-input-message"
-                placeholder="Type something and send"
+                placeholder="Type something and send..."
               ></input>
             </div>
-            <div className="user-input-send-button-wrapper d-flex flex-direction-row align-items-center justify-content-center">
-              <button type="submit" className="user-input-send-button"></button>
+            <div className="user-input-send-button-wrapper d-flex flex-direction-row align-items-center justify-content-start">
+              <button type="submit" className="user-input-send-button">
+                <i class="fas fa-paper-plane user-input-send-button-icon"></i>
+              </button>
             </div>
           </form>
         </div>

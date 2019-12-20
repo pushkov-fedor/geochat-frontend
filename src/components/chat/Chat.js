@@ -40,9 +40,9 @@ export class Chat extends Component {
               <MessagesList />
             </div>
           </div>
-          <CreateChatButton
+          {/* <CreateChatButton
             toggleCreateChatPopup={this.toggleCreateChatPopup}
-          />
+          /> */}
           <CreateChatPopup
             uuid={this.props.uuid}
             showCreateChatPopup={this.state.showCreateChatPopup}
