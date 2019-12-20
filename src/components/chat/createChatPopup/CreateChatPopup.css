@@ -11,6 +11,7 @@
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
   background-color: #957bbe;
   border-radius: 20px;
+  transition: all 0.7s;
 }
 
 .chat-title-label {

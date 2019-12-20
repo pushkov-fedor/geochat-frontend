@@ -11,7 +11,18 @@ export class DialogList extends Component {
     };
   }
 
+  componentDidUpdate() {
+    if (this.props.reloadDialogList) {
+      this.reloadDialogList();
+      this.props.toggleReloadDialogList();
+    }
+  }
+
   componentDidMount() {
+    this.reloadDialogList();
+  }
+
+  reloadDialogList() {
     var url = `http://192.168.0.110/api/user/chat/${this.props.uuid}`;
     var xhr = new XMLHttpRequest();
     xhr.open("GET", url, true);

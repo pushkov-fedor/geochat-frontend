@@ -33,18 +33,21 @@ export class CreateChatPopup extends Component {
       xhr.setRequestHeader("Content-type", "application/json");
       var self = this;
       xhr.onreadystatechange = () => {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          console.log(xhr.responseText);
+        if (xhr.readyState === 4) {
         }
       };
       xhr.send(JSON.stringify(body));
+      self.props.toggleCreateChatPopup();
     }
   }
 
   render() {
     console.log(this.state.chatTitle);
     return (
-      <div className="create-chat-popup d-flex flex-column justify-content-center align-items-center">
+      <div
+        className="create-chat-popup d-flex flex-column justify-content-center align-items-center"
+        style={{ bottom: this.props.showCreateChatPopup ? "35%" : "-50%" }}
+      >
         <form
           className="d-flex flex-column justify-content-center align-items-center"
           onSubmit={this.submitCreateChat}
